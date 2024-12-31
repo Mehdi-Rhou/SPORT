@@ -1,0 +1,280 @@
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.images-slidershow {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 800px;
+    max-width: 90%;
+    margin: auto;
+}
+.images-grid .image {
+    display: none;
+    width: 100%;
+    aspect-ratio: 16/9;
+   
+}
+
+
+.images-grid .image img {
+    width: 100%;
+    height: 100%;
+}
+.images-grid .image.active {
+    display: block;
+}
+button#next, button#prev {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button#prev {
+    left: 20px;
+}
+
+button#next {
+    right: 20px;
+}
+
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navigation li {
+    width: 6px;
+    height: 6px;
+    background: #9f9595;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ul.navigation li.active{
+    background: white;
+    width: 10px;
+    height: 10px;
+}
+header{
+    background-color: blue;
+}
+header .logo img{
+    width: 200px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 50%;
+    display: block;
+    margin: auto
+}
+header h2{
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+.nav_links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.nav_links li{
+    margin: 0 10px;
+    display: inline-block;
+}
+.nav_links a {
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nav_links a:hover{
+    color: #ff4500;
+}
+.Intro h2{
+    color: rgb(11, 11, 138);
+    text-align: center;
+    margin-top: 20px;
+}
+.Intro p{
+    text-align: center;
+}
+.Partie{
+    background-color: #e7e6e6;
+    justify-content: center;
+}
+.Partie h2{
+    color: rgb(11, 11, 138);
+    text-align: center;
+}
+.activities{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.activities img{
+    width: 300px;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+}
+.activite{
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+}
+.activite h3{
+    color: rgb(11, 11, 138);
+    padding-top: 10px;
+}
+.EVENEMENT h2{
+    color: rgb(11, 11, 138);
+    text-align: center;
+}
+.Galerie{
+    background-color: #e7e6e6;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    display: contents;
+}
+.Galerie h2{
+    color: rgb(11, 11, 138);
+    text-align: center; 
+}
+.table th{
+    background-color: #717171;
+    color:white;
+}
+.EVENEMENT {
+    padding: 60px 80px;
+}
+.table{
+    border-radius: 10px;
+}
+.Galerie{
+    background-color: #e7e6e6;
+    justify-content: center;
+}
+
+
